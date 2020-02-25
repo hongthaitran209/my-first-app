@@ -1,0 +1,95 @@
+.courses-provide-container {
+    width: 100%;
+    margin-top: 50px;
+    .parallax {
+        /* The image used */
+        background-image: url(http://trending.themescustom.com/theme/image.php/trending/theme/1547037611/popular-course-bg);
+      
+        /* Set a specific height */
+        // height: 100vh;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .courses-provide {
+            width: 90%;
+            margin: auto;
+            .course-provide-title {
+                padding: 50px 0px;
+                color: #fff;
+                text-align: center;
+                font-family: "Times New Roman",Times,serif;
+                h2 {
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .course-provide-items {
+            .course-provide-carousel {
+                .owl-nav {
+                    text-align: center;
+                    .owl-prev {
+                        font-size: 25px;
+                        margin: 20px 5px;
+                        outline: unset;
+                        span {
+                            width: 50px;
+                            border: 2px solid white;
+                            display: inline-block;
+                            color: white;
+                            border-top-left-radius: 25px;
+                            border-bottom-left-radius: 25px;
+                            transition: all 0.4s linear;
+                            &:hover {
+                                color: #ffaa30;
+                                border-color: #ffaa30;
+                        }
+                        }
+                    }
+                    .owl-next {
+                        font-size: 25px;
+                        margin: 20px 5px;
+                        outline: unset;
+                        span {
+                            width: 50px;
+                            border: 2px solid white;
+                            display: inline-block;
+                            color: white;
+                            border-top-right-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            transition: all 0.4s linear;
+                            &:hover {
+                                color: #ffaa30;
+                                border-color: #ffaa30;
+                            }
+                        }
+                    }
+                }
+                .card {
+                    overflow: hidden;
+                    border-radius: unset;
+                    .card-img {
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: unset;
+                        .card-img-top {
+                            cursor: pointer;
+                            transition: all 0.4s linear;
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+}

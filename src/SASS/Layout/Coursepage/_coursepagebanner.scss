@@ -1,0 +1,28 @@
+.course-page-banner {
+    background-image: url(http://trending.themescustom.com/theme/image.php/trending/theme/1547037611/internalbanner);
+
+  height: 200px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner-content {
+      text-align: center;
+      padding-top: 50px;
+      h1 {
+          font-size: 32px;
+          color: #333;
+      }
+      p {
+          font-size: 14px;
+          color: grey;
+      }
+  }
+  
+}
+
+.bottom-banner {
+    height: 50px;
+    background-color: #dcdcdc;
+}
