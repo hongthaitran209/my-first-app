@@ -1,0 +1,105 @@
+.course-page {
+    background-color: #ebebeb;
+    .course-page-content {
+        width: 90%;
+        margin: 50px auto;
+        .course-page-aside {
+            width: 23%;
+            margin-right: 40px;
+            .navigation {
+                position: sticky;
+                top: 75px;
+                .navigation-btn {
+                    width: 100%;
+                    border-radius: unset;
+                    &:focus {
+                        box-shadow: unset;
+                        outline: unset;
+                        background: #0482D2;
+                        border-color: #0482D2;
+                    }
+                }
+            }
+            .course-page-collapse {
+                .card {
+                    border-radius: unset;
+                    .card-body {
+                        a {
+                            color: #000;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        .courses-collapse-btn {
+                            background-color: transparent;
+                            border: none;
+                        }
+                        .courses-collapse {
+                            .card {
+                                border: unset;
+                                .card-body {
+                                    padding: 0px 1.25rem;
+                                    .course-cate-btn {
+                                        background-color: transparent;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-content {
+            width: 70%;
+            .search-bar {
+                width: 100%;
+                text-align: center;
+                padding: 20px 10px;
+                background-color: #3c4e8e;
+                color: white;
+                margin-bottom: 30px;
+                .course-page-search-bar {
+                    display: inline-block;
+                    margin-left: 15px;
+                    input {
+                        border: unset;
+                        width: 250px;
+                        margin-right: 5px;
+                    }
+                    button {
+                        margin: 0px;
+                        background-color: #e6e6e6;
+                        padding: 0px 10px;
+                        border: unset;
+                    }
+                }
+            }
+            .course-list {
+                .course-list-item {
+                    display: flex;
+                    margin: 15px 0px;
+                    padding: 15px 0px;
+                    background: white;
+                    .course-list-item-img {
+                        margin: 0px 15px;
+                        img {
+                            width:100px;
+                            height: 100px;
+                        }
+                    }
+                    .course-list-item-content {
+                        h5 {
+                            color: #333;
+                            font-size: 20px;
+                        }
+                        p {
+                            overflow: hidden;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

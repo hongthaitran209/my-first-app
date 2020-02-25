@@ -1,0 +1,52 @@
+.newsletter {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    background-image: url(http://trending.themescustom.com//theme/image.php/trending/theme/1547037611/newsletterbackground);
+    background-repeat: no-repeat;
+    padding: 58px 15px;
+    margin: 50px auto;
+    .newsletter-title {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 24px;
+            color: #000;
+        }
+        p {
+            font-size: 14px;
+            color: grey;
+        }
+    }
+    .newsletter-form {
+        width: 100%;
+        display: inline-block;
+        height: 44px;
+        vertical-align: middle;
+        input {
+            width: 40%;
+            border: 1px solid #ebebeb;
+            padding: 10px 0px 10px 10px;
+            display: inline-block;
+            font-size: 14px;
+            &:focus {
+                outline: unset;
+            }
+        }
+        button {
+            display: inline-block;
+            color: white;
+            background-color: #7fbf00;
+            padding: 4px 12px;
+            height: 100%;
+            border: none;
+            font-weight: bold;
+            &:focus {
+                outline: unset;
+            }
+            &:hover {
+                background-color: #6ca300;
+            }
+        }
+    }
+}

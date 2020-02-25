@@ -1,0 +1,38 @@
+.bottom-header-container {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    .bottom-header {
+        width: 90%;
+        margin: auto;
+        display: inline-block;
+        .header-logo {
+            display: inline-block;
+        }
+        .my-bottom-header-navbar {
+            padding: 0px !important;
+            display: inline-block;
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        color: #606264;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        padding: 20px 30px;
+                        background-color: unset;
+                        
+                    }
+                    .active {
+                        background-color: unset;
+                        color: #0482D2;
+                        border-bottom: 4px solid #0482D2;
+                        border-radius: unset;
+                    }
+                }
+            }
+        }
+    }
+}

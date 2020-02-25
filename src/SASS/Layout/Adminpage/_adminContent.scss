@@ -1,0 +1,45 @@
+.admin-content {
+    width: 90%;
+    margin: auto;
+    .admin-content-header {
+        position: sticky;
+        top: 64px;
+        width: 100%;
+        background: white;
+        padding-top: 5px;
+    }
+    .my-table{
+        td {
+            vertical-align: middle;
+        }
+    }
+    .my-functional-btn {
+        background-color: #0482D2;
+        color: #000000;
+        border: none;
+        border-radius: unset;
+        &:hover {
+            background-color: #2196f3;
+        }
+    }
+    .my-search-btn {
+        @extend .my-functional-btn;
+        background-color: #2196f3;
+        display: inline-block;
+        height: 30px;
+        line-height: 0px;
+    }
+    .my-search-field {
+        display: inline-block;
+        padding: 5px 0px;
+        height: 30px;
+        vertical-align: top;
+    }
+    .search-course-admin {
+        display: inline-block;
+        margin: 10px 0px;
+    }
+    .search-user-admin {
+        @extend .search-course-admin;
+    }
+}
