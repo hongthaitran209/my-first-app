@@ -11,8 +11,10 @@ class TopHeader extends Component {
 
     constructor (props) {
         super(props);
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
         this.state = {
             keyWord: "",
+            currentUser,
         }
     }
 
@@ -35,6 +37,7 @@ class TopHeader extends Component {
     }
 
     render() {
+        const {currentUser} = this.state;
         return (
             <div className="top-header-container">
                 <div className="top-header d-flex justify-content-between align-items-center">
@@ -48,14 +51,14 @@ class TopHeader extends Component {
 
                     <div className="top-header-right">
                         {
-                            (!_.isEmpty(localStorage)) ? 
-                            ((JSON.parse(localStorage.getItem("currentUser")).maLoaiNguoiDung === "HV") ?
+                            (!_.isEmpty(currentUser)) ? 
+                            ((currentUser.maLoaiNguoiDung === "HV") ?
                             <UserDetail /> : <></>) :
                             <SignUp />
                         }
                         
                         {
-                            (!_.isEmpty(localStorage)) ? <button className="btn btn-danger" onClick={() => this.onLogOut()}>Log out</button> : <LogIn />
+                            (!_.isEmpty(currentUser)) ? <button className="btn btn-danger" onClick={() => this.onLogOut()}>Log out</button> : <LogIn />
                         }
                     </div>
 

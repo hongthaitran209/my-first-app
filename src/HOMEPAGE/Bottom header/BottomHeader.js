@@ -4,14 +4,16 @@ import _ from 'lodash';
 
 export default class BottomHeader extends Component {
 
-    // componentDidMount() {
-    //     if (!_.isEmpty(localStorage)) {
-    //         return maLoaiNguoiDung = JSON.parse(localStorage.getItem("currentUser")).maLoaiNguoiDung
-    //     }
-    // }
+    constructor (props) {
+        super(props);
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        this.state = {
+            currentUser,
+        }
+    }
 
     render() {
-        const user = JSON.parse(localStorage.getItem("currentUser"))
+        const {currentUser} = this.state;
         return (
             <div className="bottom-header-container">
                 <div className="bottom-header d-flex justify-content-between align-items-center">
@@ -24,8 +26,8 @@ export default class BottomHeader extends Component {
                     <nav className="navbar my-bottom-header-navbar">
                         <ul className="nav nav-pills d-flex justify-content-around">
                             {
-                                !_.isEmpty(localStorage) ? 
-                                ((user.maLoaiNguoiDung === "HV") ?
+                                !_.isEmpty(currentUser) ? 
+                                ((currentUser.maLoaiNguoiDung === "HV") ?
                                     <>
                                         <li className="nav-item">
                                             <NavLink className="nav-link"
@@ -50,7 +52,7 @@ export default class BottomHeader extends Component {
                             }
 
                             {
-                                !_.isEmpty(localStorage) ? ((user.maLoaiNguoiDung === "HV") ?
+                                !_.isEmpty(currentUser) ? ((currentUser.maLoaiNguoiDung === "HV") ?
                                     <React.Fragment>
                                         <li className="nav-item">
                                             <NavLink className="nav-link" exact to="/features">Features</NavLink>
