@@ -37,7 +37,7 @@ class AddCourse extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        const { maKhoaHoc, biDanh, tenKhoaHoc, moTa, luotXem, danhGia, hinhAnh, maNhom, ngayTao} = nextProps.courseDetail;
+        const { maKhoaHoc, biDanh, tenKhoaHoc, moTa, luotXem, danhGia, hinhAnh, maNhom, ngayTao } = nextProps.courseDetail;
         if (nextProps.courseDetail !== this.state.selectedCourse) {
             this.setState({
                 maKhoaHoc,
@@ -53,7 +53,7 @@ class AddCourse extends Component {
                 taiKhoanNguoiTao: nextProps.courseDetail.nguoiTao.taiKhoan,
                 selectedCourse: nextProps.courseDetail,
                 flag: "Y",
-            }) 
+            })
         };
         return null;
     }

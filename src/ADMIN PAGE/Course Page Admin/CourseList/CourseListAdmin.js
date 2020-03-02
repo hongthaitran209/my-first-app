@@ -12,9 +12,6 @@ class CourseListAdmin extends Component {
     render() {
 
         const { courses } = this.props;
-        // const elmCourseItemAdmin = courses.map((course, index) => {
-        //     return <CourseItemAdmin course={course} key={index} />
-        // })
         console.log(courses);
 
         return (

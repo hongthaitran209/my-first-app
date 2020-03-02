@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CollapseExample from './Collapse'
+import CollapseAboutUs from './Collapse'
 
 export default class AboutUs extends Component {
     render() {
@@ -19,7 +19,7 @@ export default class AboutUs extends Component {
 
                         <div className="about-us-right col-sm-6">
                             
-                            <CollapseExample />
+                            <CollapseAboutUs />
 
                         </div>
                     </div>
