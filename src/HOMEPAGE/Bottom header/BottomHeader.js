@@ -81,11 +81,8 @@ export default class BottomHeader extends Component {
                                         </li>
                                     </React.Fragment>)
                             }
-
-
                         </ul>
                     </nav>
-
                 </div>
             </div>
         )

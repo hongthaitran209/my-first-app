@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
-const CollapseExample = (props) => {
+const CollapseAboutUs = (props) => {
     const [isOpen, setIsOpen] = useState(true);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -82,4 +82,4 @@ const CollapseExample = (props) => {
     );
 }
 
-export default CollapseExample;
+export default CollapseAboutUs;
